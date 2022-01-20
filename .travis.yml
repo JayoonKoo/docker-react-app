@@ -7,10 +7,10 @@ services:
 
 before_install:
   - echo "start creating an image with dockerfile"
-  - docker build -t rnwkdbs12/reactDev -f Dockerfile.dev .
+  - docker build -t rnwkdbs12/reactdev -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true rnwkdbs12/reactDev yarn run test -- --coverage
+  - docker run -e CI=true rnwkdbs12/reactdev yarn run test -- --coverage
 
 after_success:
   - echo "Test success"
