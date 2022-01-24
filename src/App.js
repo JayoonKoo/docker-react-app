@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          learn react
+          learn react 기능 추가
         </a>
       </header>
     </div>
